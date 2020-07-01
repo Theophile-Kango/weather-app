@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/bootstrap";
+
+html {
+  overflow: hidden;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
