@@ -1,7 +1,8 @@
 import './style.scss';
+import { weather } from './weather'
 
 const start = () => {
-  alert('Hello');
+  console.log(weather("Goma"));
 }
 
 start();
