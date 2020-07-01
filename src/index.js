@@ -2,7 +2,7 @@ import './style.scss';
 import { weather } from './weather'
 
 const start = () => {
-  console.log(weather("Goma"));
+  console.log(weather("Kigali"));
 }
 
 start();
