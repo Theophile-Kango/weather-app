@@ -6,3 +6,4 @@ export async function weather(location){
     const { name, main: {temp, pressure, humidity}, sys: { country } } = data;
     return `country-code: ${country} name: ${name} temperature: ${temp} pressure: ${pressure} humidity: ${humidity}`;
 }
+

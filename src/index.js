@@ -1,8 +1,10 @@
 import './style.scss';
-import { weather } from './weather'
+import { weather } from './app/weather'
+import { render } from './app/weather-dom'
 
 const start = () => {
-  console.log(weather("Kigali"));
+  //console.log(weather(render()));
+  render();
 }
 
 start();
