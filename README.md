@@ -3,12 +3,11 @@
 [![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Theophile-Click%20to%20Contact-brightgreen)](mailto:fadhili.kango@gmail.com ) [![Twitter Follow](https://img.shields.io/twitter/follow/Theophadh?label=Follow%20Theophile%20on%20Twitter&style=social)](https://twitter.com/Theophadh)
 
 # Weather App
-In this project I created a weather forecast site using the weather API. You should be able to search for a specific location and toggle displaying the data in Fahrenheit or Celsius
-
+In this project I created a weather forecast site using the weather API
 
 # Screenshot
 
-![restaurant_page](https://user-images.githubusercontent.com/49276315/84930138-2003e100-b0d1-11ea-9ad7-9d97ad311917.png)
+![weather](https://user-images.githubusercontent.com/49276315/86361648-73029a00-bc74-11ea-8530-beb1189a0d36.png)
 
 ## Live Demo
 
