@@ -17,14 +17,15 @@ In this project I created a weather forecast site using the weather API
 ## Getting Started
 - Clone the project to your local machine;
 - cd into the project directory;
-- Run npm install to install the necessary modules;
-- Run npm start, the page will automatically load on localhost:8080.
+- Run `npm install` to install the necessary modules;
+- Run `npm run dev`, the page will automatically load on localhost:8080.
 
 ## Built With
 
 - JavaScript
 - HTML5 
-- CSS3
+- SASS
+- Bootstrap
 
 
 ### Setup
@@ -49,7 +50,7 @@ In this project I created a weather forecast site using the weather API
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Theophile-Kango/restaurant_page/issues)
+Feel free to check the [issues page](https://github.com/Theophile-Kango/weather-app/issues)
 ## Show your support
 
 Give a ⭐️  if you like this project!
