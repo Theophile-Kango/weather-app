@@ -3,7 +3,7 @@
 [![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Theophile-Click%20to%20Contact-brightgreen)](mailto:fadhili.kango@gmail.com ) [![Twitter Follow](https://img.shields.io/twitter/follow/Theophadh?label=Follow%20Theophile%20on%20Twitter&style=social)](https://twitter.com/Theophadh)
 
 # Weather App
-The main goal of this project is to show the understanding of the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack
+In this project I created a weather forecast site using the weather API. You should be able to search for a specific location and toggle displaying the data in Fahrenheit or Celsius
 
 
 # Screenshot
