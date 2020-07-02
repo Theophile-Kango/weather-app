@@ -1,4 +1,4 @@
-export const app = (country, name, temp, pressure, humidity) => {
+export const app = (country, name, temp, pressure, humidity, icon) => {
     const temperat = document.querySelector('#temperat');
 
     temperat.classList.remove('d-none');
@@ -11,19 +11,19 @@ export const app = (country, name, temp, pressure, humidity) => {
     temperat.addEventListener('click', () => {
         if (temperat.textContent === "Deg Fahrenheit"){
             temperat.textContent = "Deg Celcius";
-            changeDeg('°F', country, name, fahrenheit.toFixed(2), pressure, humidity);
+            changeIconDeg('°F', country, name, fahrenheit.toFixed(2), pressure, humidity, icon);
         }else{
             temperat.textContent = "Deg Fahrenheit"; 
-            changeDeg('°C', country, name, temp, pressure, humidity);
+            changeIconDeg('°C', country, name, temp, pressure, humidity, icon);
         }
     });
-    changeDeg('°C', country, name, temp, pressure, humidity);
+    changeIconDeg('°C', country, name, temp, pressure, humidity, icon);
     changeBg(temp);
     
 }
 
 const changeBg = (temp) => {
-    const result = document.querySelector('p');
+    const result = document.querySelector('.weather');
     const bg = ['one', 'two', 'three', 'four', 'five', 'six', 
                 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
                 
@@ -35,13 +35,18 @@ const changeBg = (temp) => {
     };
 }
 
-const changeDeg = (deg, country, name, temp, pressure, humidity) => {
-    const result = document.querySelector('p');
-    result.classList.remove('d-none');
+const changeIconDeg = (deg, country, name, temp, pressure, humidity, icon) => {
+    const weather = document.querySelector('.weather');
+    const result = weather.querySelector('p');
+    const img = document.querySelector('#icon');
+    img.setAttribute('src',`http://openweathermap.org/img/wn/${icon}@2x.png`);
+
+    weather.classList.remove('d-none');
     
     result.innerHTML = `<strong>Country-Code:</strong> ${country}<br/> 
                         <strong>City:</strong> ${name}<br/>
                         <strong>Temperature:</strong> ${temp} ${deg}<br/>
-                        <strong>Pressure:</strong> ${pressure}<br/>
-                        <strong>Humidity:</strong> ${humidity}`;
+                        <strong>Pressure:</strong> ${pressure} hPa<br/>
+                        <strong>Humidity:</strong> ${humidity} %<br/>
+                        `;
 }
