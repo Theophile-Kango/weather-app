@@ -2,10 +2,11 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Theophile-Click%20to%20Contact-brightgreen)](mailto:fadhili.kango@gmail.com ) [![Twitter Follow](https://img.shields.io/twitter/follow/Theophadh?label=Follow%20Theophile%20on%20Twitter&style=social)](https://twitter.com/Theophadh)",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server  --config webpack.dev.js --open",
-    "start": "node src/index.js",
+    "start": "node server.js",
     "heroku-postbuild": "webpack --config webpack.prod.js",
     "build": "webpack --config webpack.prod.js"
   },
