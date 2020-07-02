@@ -1,10 +1,15 @@
 import './style.scss';
 import { weather } from './app/weather'
-import { render } from './app/weather-dom'
 
 const start = () => {
-  //console.log(weather(render()));
-  render();
+  const form = document.querySelector('#form');
+    const location = document.querySelector('#location');
+    
+    form.onsubmit = function(){ 
+      weather(location.value);
+      form.reset();
+    };
+
 }
 
 start();
