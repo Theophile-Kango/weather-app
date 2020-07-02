@@ -11,7 +11,7 @@ In this project I created a weather forecast site using the weather API
 
 ## Live Demo
 
-[Click here](https://rawcdn.githack.com/Theophile-Kango/restaurant_page/8631271e80a5b4862cea6df9d418aab1bfdd848f/dist/index.html)
+[Click here](https://faster-weather-app.herokuapp.com/?#)
 
 
 ## Getting Started
