@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express'); // eslint-disable-line import/no-extraneous-dependencies
 const path = require('path');
 
 const port = process.env.PORT || 8080;

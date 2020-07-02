@@ -17,7 +17,7 @@ const changeIconDeg = (deg, country, name, temp, pressure, humidity, icon) => {
   const img = document.querySelector('#icon');
   const warning = document.querySelector('#warning');
 
-  img.setAttribute('src', `http://openweathermap.org/img/wn/${icon}@2x.png`);
+  img.setAttribute('src', `https://openweathermap.org/img/wn/${icon}@2x.png`);
 
   weather.classList.remove('d-none');
   warning.classList.add('d-none');
