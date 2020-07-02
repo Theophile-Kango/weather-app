@@ -9,7 +9,7 @@ export async function weather(location){
         
         app(country, name, temp, pressure, humidity);
     }catch(err){
-        console.log(err);
+        alert("Give a valid location");
     } 
 }
 

@@ -18,12 +18,27 @@ export const app = (country, name, temp, pressure, humidity) => {
         }
     });
     changeDeg('°C', country, name, temp, pressure, humidity);
+    changeBg(temp);
+    
+}
+
+const changeBg = (temp) => {
+    const result = document.querySelector('p');
+    const bg = ['one', 'two', 'three', 'four', 'five', 'six', 
+                'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+                
+    for(let i = 0; i < bg.length; i += 1) {
+        if(temp <= i * 10){
+            result.classList.add(bg[i]);
+            break;
+        }
+    };
 }
 
 const changeDeg = (deg, country, name, temp, pressure, humidity) => {
     const result = document.querySelector('p');
     result.classList.remove('d-none');
-
+    
     result.innerHTML = `<strong>Country-Code:</strong> ${country}<br/> 
                         <strong>City:</strong> ${name}<br/>
                         <strong>Temperature:</strong> ${temp} ${deg}<br/>
