@@ -4,8 +4,9 @@
   "description": "[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Theophile-Click%20to%20Contact-brightgreen)](mailto:fadhili.kango@gmail.com ) [![Twitter Follow](https://img.shields.io/twitter/follow/Theophadh?label=Follow%20Theophile%20on%20Twitter&style=social)](https://twitter.com/Theophadh)",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "dev": "webpack-dev-server  --config webpack.dev.js --open",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack --config webpack.prod.js",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
