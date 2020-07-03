@@ -1,6 +1,6 @@
 
 
-[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Theophile-Click%20to%20Contact-brightgreen)](mailto:fadhili.kango@gmail.com ) [![Twitter Follow](https://img.shields.io/twitter/follow/Theophadh?label=Follow%20Theophile%20on%20Twitter&style=social)](https://twitter.com/Theophadh)
+[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Theophile-Click%20to%20Contact-brightgreen)](mailto:fadhili.kango@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/Theophadh?label=Follow%20Theophile%20on%20Twitter&style=social)](https://twitter.com/Theophadh)
 
 # Weather App
 In this project I created a weather forecast site using the weather API
@@ -26,7 +26,8 @@ In this project I created a weather forecast site using the weather API
 - HTML5 
 - SASS
 - Bootstrap
-
+- NodeJS
+And deploy to heroku
 
 ### Setup
 
