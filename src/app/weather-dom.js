@@ -5,7 +5,7 @@ const changeBg = (temp) => {
 
   for (let i = 0; i < bg.length; i += 1) {
     if (temp <= i * 10) {
-      result.classList.add(bg[i]);
+      result.setAttribute('id', bg[i]);
       break;
     }
   }
