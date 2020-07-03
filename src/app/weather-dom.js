@@ -40,16 +40,12 @@ const app = (country, name, temp, pressure, humidity, icon) => {
 
   const fahrenheit = temp * (9 / 5) + 32;
 
-  temperat.addEventListener('click', () => {
-    if (temperat.textContent === 'Deg Fahrenheit') {
-      temperat.textContent = 'Deg Celcius';
-      changeIconDeg('°F', country, name, fahrenheit.toFixed(2), pressure, humidity, icon);
-    } else {
-      temperat.textContent = 'Deg Fahrenheit';
-      changeIconDeg('°C', country, name, temp, pressure, humidity, icon);
-    }
-  });
-  changeIconDeg('°C', country, name, temp, pressure, humidity, icon);
+  if (temperat.textContent === 'Deg Fahrenheit') {
+    changeIconDeg('°C', country, name, temp, pressure, humidity, icon);
+  } else {
+    changeIconDeg('°F', country, name, fahrenheit.toFixed(2), pressure, humidity, icon);
+  }
+
   changeBg(temp);
 };
 
