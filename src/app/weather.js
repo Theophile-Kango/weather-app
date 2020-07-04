@@ -1,5 +1,7 @@
 import { app, errorMessage } from './weather-dom';
 
+let [cC, cN, cT, cP, cH, cI] = ['', '', 0, 0, 0, ''];
+
 async function weather(location) {
   try {
     const api = 'https://api.openweathermap.org/data/2.5/weather?';
@@ -9,11 +11,16 @@ async function weather(location) {
     const {
       name, main: { temp, pressure, humidity }, sys: { country }, weather: [{ icon }],
     } = data;
-
+    [cC, cN, cT, cP, cH, cI] = [country, name, temp, pressure, humidity, icon];
     app(country, name, temp, pressure, humidity, icon);
   } catch (err) {
     errorMessage('Give a valid location');
   }
 }
 
-export default weather;
+const currentWeather = () => {
+  app(cC, cN, cT, cP, cH, cI);
+};
+
+
+export { weather, currentWeather };

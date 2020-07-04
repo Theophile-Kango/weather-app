@@ -1,5 +1,5 @@
 import './style.scss';
-import weather from './app/weather';
+import { weather, currentWeather } from './app/weather';
 
 const start = () => {
   const form = document.querySelector('#form');
@@ -13,11 +13,12 @@ const start = () => {
     form.reset();
   };
   temperat.addEventListener('click', () => {
-    weather(location);
     if (temperat.textContent === 'Deg Fahrenheit') {
       temperat.textContent = 'Deg Celcius';
+      currentWeather();
     } else {
       temperat.textContent = 'Deg Fahrenheit';
+      currentWeather();
     }
   });
 };
