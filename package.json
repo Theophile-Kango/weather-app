@@ -2,10 +2,12 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Theophile-Click%20to%20Contact-brightgreen)](mailto:fadhili.kango@gmail.com ) [![Twitter Follow](https://img.shields.io/twitter/follow/Theophadh?label=Follow%20Theophile%20on%20Twitter&style=social)](https://twitter.com/Theophadh)",
+  "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "dev": "webpack-dev-server  --config webpack.dev.js --open",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack --config webpack.prod.js",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
@@ -22,6 +24,7 @@
   "devDependencies": {
     "bootstrap": "^4.5.0",
     "css-loader": "^3.6.0",
+    "express": "^4.17.1",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
@@ -29,6 +32,7 @@
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path": "^0.12.7",
     "popper.js": "^1.16.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
@@ -41,6 +45,7 @@
   "dependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.2",
+    "geolocator": "^2.1.5",
     "lodash": "^4.17.15",
     "url-loader": "^4.1.0"
   }

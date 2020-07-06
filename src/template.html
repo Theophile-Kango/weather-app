@@ -7,7 +7,21 @@
     <title>Weather App</title>
   </head>
   <body>
-   <div id="content">
+   <div id="content" class="bg-light">
+     <h1 class="m-5">Weather App</h1>
+     <p id="warning" class="d-none bg-warning p-3">
+     </p>
+     <form action="#" id="form" class="d-flex justify-content-center">
+       <input type="text" class="w-100 mr-3 form-control" placeholder="Give a Location" id="location" required>
+       <button type="submit" class="btn btn-success">Submit</button>
+     </form>
+     <div class="weather d-none m-5 p-5">
+      <p>
+      </p>
+      <img class="rounded float-right p-0" src="https://openweathermap.org/img/wn/04d@2x.png" alt="icon" id="icon">
+     </div>
+
+     <button class="d-none btn btn-primary" id="temperat">Deg Fahrenheit</button>
    </div>
   </body>
 </html>
