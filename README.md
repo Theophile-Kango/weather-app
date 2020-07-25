@@ -11,7 +11,7 @@ In this project I created a weather forecast site using the weather API
 
 ## Live Demo
 
-[Click here](https://faster-weather-app.herokuapp.com/?#)
+[Click here](https://faster-weather-app.netlify.app)
 
 
 ## Getting Started
